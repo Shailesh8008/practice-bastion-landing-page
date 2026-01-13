@@ -1,11 +1,23 @@
 import React from "react";
+import { motion } from "framer-motion";
 
 export const ScheduleSection: React.FC = () => {
   return (
     <section className="bg-[#021e10] pt-30 pb-18 px-6 md:pl-16 pr-6 ">
       <div className="max-w-7xl mx-auto flex flex-col-reverse xl:flex-row justify-center lg:justify-between">
         {/* Left Schedule Card */}
-        <div className="bg-[rgb(104,119,112)] max-w-lg rounded-4xl px-3 sm:px-8 pt-7 pb-5 flex flex-col space-y-9 mx-auto">
+        <motion.div
+          initial={{ x: -100, rotate: -100, opacity: 0 }}
+          whileInView={{ x: 0, rotate: 0, opacity: 1 }}
+          transition={{
+            duration: 1,
+            ease: "easeOut",
+          }}
+          viewport={{
+            amount: 0.3,
+          }}
+          className="bg-[rgb(104,119,112)] max-w-lg rounded-4xl px-3 sm:px-8 pt-7 pb-5 flex flex-col space-y-9 mx-auto"
+        >
           <div className="flex items-start gap-2">
             <div className="w-24 sm:w-35 flex items-center justify-center shrink-0">
               <img
@@ -54,16 +66,27 @@ export const ScheduleSection: React.FC = () => {
               SUBSCRIBE NOW FOR FREE!!!
             </button>
           </div>
-        </div>
+        </motion.div>
 
         {/* Right Illustration Area */}
-        <div className="max-w-152 max-h-116 mx-auto sm:mb-30 xl:mb-auto">
+        <motion.div
+          initial={{ x: 100, rotate: 100, opacity: 0 }}
+          whileInView={{ x: 0, rotate: 0, opacity: 1 }}
+          transition={{
+            duration: 1,
+            ease: "easeOut",
+          }}
+          viewport={{
+            amount: 0.3,
+          }}
+          className="max-w-152 max-h-116 mx-auto sm:mb-30 xl:mb-auto"
+        >
           <img
             src={`${import.meta.env.BASE_URL}images/BoyWithLaptop.png`}
             alt="BoyWithLaptop"
             className="object-contain -mt-30 lg:-mt-40"
           />
-        </div>
+        </motion.div>
       </div>
     </section>
   );

@@ -1,4 +1,7 @@
 import React from "react";
+import { motion } from "framer-motion";
+import type { Variants } from "framer-motion";
+import { useScrollDirection } from "../hooks/useScrollDirection";
 
 interface TestimonialProps {
   name: string;
@@ -6,8 +9,36 @@ interface TestimonialProps {
   quote: string;
 }
 
+const containerVariants: Variants = {
+  hidden: {},
+  visible: (direction: "up" | "down") => ({
+    transition: {
+      staggerChildren: 0.2,
+      staggerDirection: direction === "up" ? -1 : 1,
+    },
+  }),
+};
+
+const itemVariants: Variants = {
+  hidden: {
+    x: 300,
+    opacity: 0,
+  },
+  visible: {
+    x: 0,
+    opacity: 1,
+    transition: {
+      duration: 0.9,
+      ease: "easeOut",
+    },
+  },
+};
+
 const Testimonial: React.FC<TestimonialProps> = ({ name, title, quote }) => (
-  <div className="relative overflow-hidden rounded-[2rem] px-6 py-4 flex flex-col md:flex-row gap-8 z-50">
+  <motion.div
+    variants={itemVariants}
+    className="relative overflow-hidden rounded-[2rem] px-6 py-4 flex flex-col md:flex-row gap-8 z-50"
+  >
     <div className="absolute top-0 left-0 w-full h-full bg-white opacity-50 -z-10"></div>
     <div className="md:w-1/3 self-center">
       <h4 className="text-2xl font-black text-gray-900 leading-snug">
@@ -17,10 +48,12 @@ const Testimonial: React.FC<TestimonialProps> = ({ name, title, quote }) => (
     <div className="md:w-2/3">
       <p className="text-blue-900 text-xl leading-relaxed">{quote}</p>
     </div>
-  </div>
+  </motion.div>
 );
 
 export const Testimonials: React.FC = () => {
+  const direction = useScrollDirection();
+
   const reviews = [
     {
       name: "Krishna Appala",
@@ -70,11 +103,18 @@ export const Testimonials: React.FC = () => {
           </div>
         </div>
 
-        <div className="lg:w-8/12 flex flex-col gap-9">
+        <motion.div
+          variants={containerVariants}
+          custom={direction}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ amount: 0.2 }}
+          className="lg:w-8/12 flex flex-col gap-9"
+        >
           {reviews.map((rev, i) => (
             <Testimonial key={i} {...rev} />
           ))}
-        </div>
+        </motion.div>
       </div>
     </section>
   );
