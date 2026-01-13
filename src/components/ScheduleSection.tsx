@@ -10,7 +10,6 @@ export const ScheduleSection: React.FC = () => {
             <div className="w-24 sm:w-35 flex items-center justify-center shrink-0">
               <img
                 src={`${import.meta.env.BASE_URL}images/calender.png`}
-                loading="lazy"
                 alt="calender"
               />
             </div>
@@ -33,7 +32,6 @@ export const ScheduleSection: React.FC = () => {
             <div className="w-24 sm:w-35 flex items-center justify-center shrink-0">
               <img
                 src={`${import.meta.env.BASE_URL}images/calender.png`}
-                loading="lazy"
                 alt="calender"
               />
             </div>
@@ -62,7 +60,6 @@ export const ScheduleSection: React.FC = () => {
         <div className="max-w-152 max-h-116 mx-auto sm:mb-30 xl:mb-auto">
           <img
             src={`${import.meta.env.BASE_URL}images/BoyWithLaptop.png`}
-            loading="lazy"
             alt="BoyWithLaptop"
             className="object-contain -mt-30 lg:-mt-40"
           />

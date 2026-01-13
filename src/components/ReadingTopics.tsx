@@ -21,7 +21,6 @@ const TopicCard: React.FC<TopicCardProps> = ({
     <div className="h-64 overflow-hidden">
       <img
         src={`${import.meta.env.BASE_URL}images/${image}`}
-        loading="lazy"
         alt={title}
         className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
       />

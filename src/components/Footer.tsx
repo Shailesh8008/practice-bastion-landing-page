@@ -105,7 +105,6 @@ export const Footer: React.FC = () => {
               <div className="absolute top-0 left-0 w-full h-full z-40">
                 <img
                   src={`${import.meta.env.BASE_URL}images/footerImg.png`}
-                  loading="lazy"
                   alt="footer image"
                   className="w-full h-[110%] [clip-path:polygon(2.8%_0%,0%_0%,36%_17%,121%_11%,100%_13%,83%_100%,14%_74%,14%_60%,0%_37%)]"
                 />
