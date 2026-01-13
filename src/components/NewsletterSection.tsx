@@ -8,6 +8,7 @@ export const NewsletterSection: React.FC = () => {
           {/* Person Illustration Placeholder */}
           <img
             src={`${import.meta.env.BASE_URL}images/WritingLady.png`}
+            loading="lazy"
             alt="WritingLady"
             className=""
           />
@@ -34,6 +35,7 @@ export const NewsletterSection: React.FC = () => {
       <div className="absolute bottom-0 lg:-bottom-8 right-0 hidden md:block animate-bounce [animation-duration:2s]">
         <img
           src={`${import.meta.env.BASE_URL}images/BulbWithMessage.png`}
+          loading="lazy"
           alt="BulbWithMessage"
           className="md:max-w-40 lg:max-w-60"
         />

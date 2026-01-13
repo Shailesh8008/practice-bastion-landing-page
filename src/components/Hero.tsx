@@ -22,6 +22,7 @@ export const Hero: React.FC = () => {
             <div className="relative w-48 md:w-64 lg:w-84 mx-auto z-50">
               <img
                 src={`${import.meta.env.BASE_URL}images/logoOther.png`}
+                loading="lazy"
                 alt="logoOther"
               />
             </div>
@@ -31,6 +32,7 @@ export const Hero: React.FC = () => {
                 src={`${
                   import.meta.env.BASE_URL
                 }images/PhotoshopExtension_Image.png`}
+                loading="lazy"
                 alt="PhotoshopExtension_Image"
               />
             </div>

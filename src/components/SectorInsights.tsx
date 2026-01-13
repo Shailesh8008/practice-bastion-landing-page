@@ -6,6 +6,7 @@ export const SectorInsights: React.FC = () => {
       <div className="absolute -z-50 w-full h-full top-0 left-0 -scale-x-100">
         <img
           src={`${import.meta.env.BASE_URL}images/background1.jpg`}
+          loading="lazy"
           alt=""
           className="h-full w-full"
         />
@@ -32,6 +33,7 @@ export const SectorInsights: React.FC = () => {
           <div className="max-w-80 mx-auto lg:mx-0">
             <img
               src={`${import.meta.env.BASE_URL}images/sittingPeople.png`}
+              loading="lazy"
               alt="sittingPeople"
               className="-scale-x-100"
             />
@@ -45,6 +47,7 @@ export const SectorInsights: React.FC = () => {
             <div className="absolute top-0 left-0 w-full -z-45 h-full items-center content-center">
               <img
                 src={`${import.meta.env.BASE_URL}images/storage.png`}
+                loading="lazy"
                 alt=""
                 className="scale-[275%] sm:scale-[275%]"
               />
@@ -55,6 +58,7 @@ export const SectorInsights: React.FC = () => {
                 <div className="items-start w-18 mx-auto">
                   <img
                     src={`${import.meta.env.BASE_URL}images/logoOther.png`}
+                    loading="lazy"
                     alt=""
                   />
                 </div>
@@ -78,12 +82,14 @@ export const SectorInsights: React.FC = () => {
             <div className="absolute top-0 left-0 w-full -z-45 h-full items-center content-center">
               <img
                 src={`${import.meta.env.BASE_URL}images/processor.jpg`}
+                loading="lazy"
                 alt=""
                 className="scale-[350%] sm:scale-[325%]"
               />
               <div className="absolute top-0 left-0 w-full h-full opacity-60">
                 <img
                   src={`${import.meta.env.BASE_URL}images/overlay.jpg`}
+                  loading="lazy"
                   alt="overlay"
                   className="w-full h-full"
                 />
@@ -95,6 +101,7 @@ export const SectorInsights: React.FC = () => {
                 <div className="items-start w-18 mx-auto">
                   <img
                     src={`${import.meta.env.BASE_URL}images/logoOther.png`}
+                    loading="lazy"
                     alt=""
                   />
                 </div>
@@ -109,6 +116,7 @@ export const SectorInsights: React.FC = () => {
                 <div className="max-w-60 justify-center overflow-hidden">
                   <img
                     src={`${import.meta.env.BASE_URL}images/chip.avif`}
+                    loading="lazy"
                     alt=""
                     className="w-full translate-x-6"
                   />

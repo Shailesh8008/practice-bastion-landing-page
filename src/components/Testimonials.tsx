@@ -47,6 +47,7 @@ export const Testimonials: React.FC = () => {
       <div className="absolute top-0 left-0 w-full h-full">
         <img
           src={`${import.meta.env.BASE_URL}images/handshake1.jpg`}
+          loading="lazy"
           alt="handshake"
           className="w-full h-full"
         />
@@ -64,6 +65,7 @@ export const Testimonials: React.FC = () => {
           <div className="lg:absolute lg:bottom-0 w-56 sm:w-[22rem] mx-auto lg:mx-0 mt-10">
             <img
               src={`${import.meta.env.BASE_URL}images/like.png`}
+              loading="lazy"
               alt="Like Image"
               className="w-full"
             />
