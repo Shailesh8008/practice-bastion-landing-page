@@ -1,0 +1,84 @@
+@import "tailwindcss";
+
+/* small helpers */
+.text-gradient {
+    background: linear-gradient(90deg, #6b21a8, #a78bfa);
+    /* -webkit-background-clip: text; */
+    -webkit-text-fill-color: transparent;
+}
+
+/* rotate on hover animation on logo border */
+
+.rotate-border {
+    transition: transform 0.6s ease-in-out;
+    transform-origin: center;
+}
+
+.group:hover .rotate-border {
+    animation: rotate-left-right 2s linear forwards;
+}
+
+.group:not(:hover) .rotate-border {
+    animation: rotate-right-left 2s linear forwards;
+}
+
+@keyframes rotate-left-right {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes rotate-right-left {
+    from {
+        transform: rotate(360deg);
+    }
+
+    to {
+        transform: rotate(0deg);
+    }
+}
+
+/* keywords animation scrollbar */
+
+@keyframes scroll {
+    0% {
+        transform: translateX(-50%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.animate-scroll {
+    display: inline-flex;
+    animation: scroll 8s linear infinite;
+}
+
+
+
+video {
+    opacity: 1;
+    transition: opacity 0.6s ease-in-out;
+}
+
+/* technical terms */
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+.animate-scroll {
+    display: inline-flex;
+    animation: scroll 30s linear infinite;
+}
