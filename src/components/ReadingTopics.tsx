@@ -20,7 +20,7 @@ const TopicCard: React.FC<TopicCardProps> = ({
   >
     <div className="h-64 overflow-hidden">
       <img
-        src={image}
+        src={`${import.meta.env.BASE_URL}images/${image}`}
         alt={title}
         className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
       />
@@ -43,37 +43,37 @@ export const ReadingTopics: React.FC = () => {
     {
       title: "Macro Topics",
       description: "Decoding the global shifts impacting your wallet.",
-      image: "/images/money.webp",
+      image: `money.webp`,
       isRedHeader: true,
     },
     {
       title: "Company Developments",
       description: "Inside the boardroom: What's changing at top firms.",
-      image: "/images/building.webp",
+      image: `building.webp`,
       isRedHeader: true,
     },
     {
       title: "IPO Analysis",
       description: "IPO Watch: Who's ready to launch (and who to avoid).",
-      image: "/images/ipo.webp",
+      image: `ipo.webp`,
       isRedHeader: true,
     },
     {
       title: "Investing Concepts",
       description: "Back to basics: The mental models of smart investing.",
-      image: "/images/brain.webp",
+      image: `brain.webp`,
       isRedHeader: false,
     },
     {
       title: "Plant Visits Insights",
       description: "From the source: Real-time reports from our site visits.",
-      image: "/images/factory.jpg",
+      image: `factory.jpg`,
       isRedHeader: false,
     },
     {
       title: "Business Dynamics",
       description: "How great businesses actually make money.",
-      image: "/images/business.avif",
+      image: `business.avif`,
       isRedHeader: false,
     },
   ];

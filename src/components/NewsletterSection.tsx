@@ -6,7 +6,11 @@ export const NewsletterSection: React.FC = () => {
       <div className="flex justify-center lg:justify-start lg:w-fit w-full">
         <div className="relative max-w-120 -top-1 ">
           {/* Person Illustration Placeholder */}
-          <img src="/images/WritingLady.png" alt="WritingLady" className="" />
+          <img
+            src={`${import.meta.env.BASE_URL}images/WritingLady.png`}
+            alt="WritingLady"
+            className=""
+          />
         </div>
       </div>
 
@@ -27,9 +31,9 @@ export const NewsletterSection: React.FC = () => {
       </div>
 
       {/* Floating Icons decoration */}
-      <div className="absolute bottom-0 lg:-bottom-8 right-0 hidden md:block">
+      <div className="absolute bottom-0 lg:-bottom-8 right-0 hidden md:block animate-bounce [animation-duration:2s]">
         <img
-          src="/images/BulbWithMessage.png"
+          src={`${import.meta.env.BASE_URL}images/BulbWithMessage.png`}
           alt="BulbWithMessage"
           className="md:max-w-40 lg:max-w-60"
         />

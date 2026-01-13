@@ -46,7 +46,7 @@ export const Testimonials: React.FC = () => {
     <section className="py-10 px-6 md:px-10 relative">
       <div className="absolute top-0 left-0 w-full h-full">
         <img
-          src="/images/handshake1.jpg"
+          src={`${import.meta.env.BASE_URL}images/handshake1.jpg`}
           alt="handshake"
           className="w-full h-full"
         />
@@ -62,7 +62,11 @@ export const Testimonials: React.FC = () => {
             Say...
           </h2>
           <div className="lg:absolute lg:bottom-0 w-56 sm:w-[22rem] mx-auto lg:mx-0 mt-10">
-            <img src="/images/like.png" alt="Like Image" className="w-full" />
+            <img
+              src={`${import.meta.env.BASE_URL}images/like.png`}
+              alt="Like Image"
+              className="w-full"
+            />
           </div>
         </div>
 

@@ -20,12 +20,17 @@ export const Hero: React.FC = () => {
         <div className="relative group">
           <div className="w-60 h-60 lg:w-100 lg:h-100 sm:w-84 sm:h-84 content-center">
             <div className="relative w-48 md:w-64 lg:w-84 mx-auto z-50">
-              <img src="/images/logoOther.png" alt="logoOther" />
+              <img
+                src={`${import.meta.env.BASE_URL}images/logoOther.png`}
+                alt="logoOther"
+              />
             </div>
             <div className="absolute top-0 w-full h-full bg-white rounded-full blur-2xl opacity-35 pointer-events-none"></div>
-            <div className="absolute top-0 -right-8 sm:-right-4 md:-right-14 lg:-right-18 animate-bounce w-22 sm:w-26 md:w-32 lg:w-38">
+            <div className="absolute top-0 -right-8 sm:-right-4 md:-right-14 lg:-right-18 animate-bounce [animation-duration:2s] w-22 sm:w-26 md:w-32 lg:w-38">
               <img
-                src="/images/PhotoshopExtension_Image.png"
+                src={`${
+                  import.meta.env.BASE_URL
+                }images/PhotoshopExtension_Image.png`}
                 alt="PhotoshopExtension_Image"
               />
             </div>

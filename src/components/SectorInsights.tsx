@@ -4,7 +4,11 @@ export const SectorInsights: React.FC = () => {
   return (
     <section className="py-10 pl-4 sm:pl-6 pr-4 relative overflow-hidden">
       <div className="absolute -z-50 w-full h-full top-0 left-0 -scale-x-100">
-        <img src="/images/background1.jpg" alt="" className="h-full w-full" />
+        <img
+          src={`${import.meta.env.BASE_URL}images/background1.jpg`}
+          alt=""
+          className="h-full w-full"
+        />
         <div className="absolute top-0 left-0 w-full h-full bg-black opacity-60"></div>
       </div>
       <div className="max-w-7xl mx-auto flex flex-col lg:flex-row">
@@ -27,7 +31,7 @@ export const SectorInsights: React.FC = () => {
           </div>
           <div className="max-w-80 mx-auto lg:mx-0">
             <img
-              src="/images/sittingPeople.png"
+              src={`${import.meta.env.BASE_URL}images/sittingPeople.png`}
               alt="sittingPeople"
               className="-scale-x-100"
             />
@@ -39,13 +43,20 @@ export const SectorInsights: React.FC = () => {
           {/* Sector Card 1: BESS */}
           <div className="relative group overflow-hidden h-[32rem] rounded-t-2xl sm:rounded-none">
             <div className="absolute top-0 left-0 w-full -z-45 h-full items-center content-center">
-              <img src="/images/storage.png" alt="" className="scale-[275%] sm:scale-[275%]" />
+              <img
+                src={`${import.meta.env.BASE_URL}images/storage.png`}
+                alt=""
+                className="scale-[275%] sm:scale-[275%]"
+              />
               <div className="absolute top-0 left-0 w-full h-full bg-black opacity-60"></div>
             </div>
             <div className="h-full flex flex-col">
               <div className="p-4">
                 <div className="items-start w-18 mx-auto">
-                  <img src="/images/logoOther.png" alt="" />
+                  <img
+                    src={`${import.meta.env.BASE_URL}images/logoOther.png`}
+                    alt=""
+                  />
                 </div>
                 <p className="text-[#ffde59] font-black text-xl sm:text-[2rem] mt-4 text-center md:text-end">
                   BESS
@@ -66,13 +77,13 @@ export const SectorInsights: React.FC = () => {
           <div className="relative group overflow-hidden sm:h-[32rem] rounded-b-2xl sm:rounded-none">
             <div className="absolute top-0 left-0 w-full -z-45 h-full items-center content-center">
               <img
-                src="/images/processor.jpg"
+                src={`${import.meta.env.BASE_URL}images/processor.jpg`}
                 alt=""
                 className="scale-[350%] sm:scale-[325%]"
               />
               <div className="absolute top-0 left-0 w-full h-full opacity-60">
                 <img
-                  src="/images/overlay.jpg"
+                  src={`${import.meta.env.BASE_URL}images/overlay.jpg`}
                   alt="overlay"
                   className="w-full h-full"
                 />
@@ -82,7 +93,10 @@ export const SectorInsights: React.FC = () => {
             <div className="h-full flex flex-col">
               <div className="p-4">
                 <div className="items-start w-18 mx-auto">
-                  <img src="/images/logoOther.png" alt="" />
+                  <img
+                    src={`${import.meta.env.BASE_URL}images/logoOther.png`}
+                    alt=""
+                  />
                 </div>
                 <p className="text-[#ffde59] font-black text-xl sm:text-[1.7rem] mt-4 text-center md:text-start">
                   SEMICONDUCTORS
@@ -94,7 +108,7 @@ export const SectorInsights: React.FC = () => {
               <div className="px-8 flex justify-center py-2">
                 <div className="max-w-60 justify-center overflow-hidden">
                   <img
-                    src="/images/chip.avif"
+                    src={`${import.meta.env.BASE_URL}images/chip.avif`}
                     alt=""
                     className="w-full translate-x-6"
                   />

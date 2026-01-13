@@ -8,7 +8,10 @@ export const ScheduleSection: React.FC = () => {
         <div className="bg-[rgb(104,119,112)] max-w-lg rounded-4xl px-3 sm:px-8 pt-7 pb-5 flex flex-col space-y-9 mx-auto">
           <div className="flex items-start gap-2">
             <div className="w-24 sm:w-35 flex items-center justify-center shrink-0">
-              <img src="/images/calender.png" alt="calender" />
+              <img
+                src={`${import.meta.env.BASE_URL}images/calender.png`}
+                alt="calender"
+              />
             </div>
             <div>
               <h3 className="text-3xl sm:text-5xl font-bold text-[#12007B] text-center mb-0.5">
@@ -27,7 +30,10 @@ export const ScheduleSection: React.FC = () => {
 
           <div className="flex items-start gap-2">
             <div className="w-24 sm:w-35 flex items-center justify-center shrink-0">
-              <img src="/images/calender.png" alt="calender" />
+              <img
+                src={`${import.meta.env.BASE_URL}images/calender.png`}
+                alt="calender"
+              />
             </div>
             <div>
               <h3 className="text-3xl sm:text-5xl font-bold text-[#12007b] text-center mb-0.5">
@@ -51,13 +57,13 @@ export const ScheduleSection: React.FC = () => {
         </div>
 
         {/* Right Illustration Area */}
-          <div className="max-w-152 max-h-116 mx-auto sm:mb-30 xl:mb-auto">
-            <img
-              src="/images/BoyWithLaptop.png"
-              alt="BoyWithLaptop"
-              className="object-contain -mt-30 lg:-mt-40"
-            />
-          </div>
+        <div className="max-w-152 max-h-116 mx-auto sm:mb-30 xl:mb-auto">
+          <img
+            src={`${import.meta.env.BASE_URL}images/BoyWithLaptop.png`}
+            alt="BoyWithLaptop"
+            className="object-contain -mt-30 lg:-mt-40"
+          />
+        </div>
       </div>
     </section>
   );
