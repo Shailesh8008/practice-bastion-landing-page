@@ -8,7 +8,7 @@ export const Footer: React.FC = () => {
 
       <div className="max-w-7xl mx-auto flex flex-col lg:flex-row justify-between">
         <div className="lg:w-1/2 mb-16 lg:mb-0 self-start mx-auto lg:mx-0">
-          <h2 className="text-2xl sm:text-[3.2rem] font-bold leading-10 sm:leading-14 tracking-tight sm:mb-13 mb-8 ">
+          <h2 className="text-3xl sm:text-[3.2rem] font-bold leading-10 sm:leading-14 tracking-tight sm:mb-13 mb-8 ">
             Begin your
             <br />
             access to crisp

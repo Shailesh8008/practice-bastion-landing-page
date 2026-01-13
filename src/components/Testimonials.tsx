@@ -109,12 +109,17 @@ export const Testimonials: React.FC = () => {
           initial="hidden"
           whileInView="visible"
           viewport={{ amount: 0.2 }}
-          className="lg:w-8/12 flex flex-col gap-9"
+          className="lg:w-8/12 flex-col gap-9 sm:flex hidden"
         >
           {reviews.map((rev, i) => (
             <Testimonial key={i} {...rev} />
           ))}
         </motion.div>
+        <div className="lg:w-8/12 flex flex-col gap-9">
+          {reviews.map((rev, i) => (
+            <Testimonial key={i} {...rev} />
+          ))}
+        </div>
       </div>
     </section>
   );

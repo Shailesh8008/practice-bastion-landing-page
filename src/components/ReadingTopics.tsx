@@ -81,7 +81,7 @@ export const ReadingTopics: React.FC = () => {
   return (
     <section className="">
       <div className="max-w-7xl mx-auto">
-        <div className="bg-[#021e10] pt-24 pb-9 px-6 md:px-20">
+        <div className="bg-[#021e10] pt-12 md:pt-24 pb-9 px-6 md:px-20">
           <h2 className="text-4xl md:text-6xl text-white font-black text-center mb-20 tracking-tight">
             What Do You Get To Read?
           </h2>
@@ -93,7 +93,7 @@ export const ReadingTopics: React.FC = () => {
           </div>
 
           <div className="mt-10 text-center">
-            <button className="bg-white hover:bg-gray-200 transition-all duration-300 text-black font-black py-4 px-12 rounded-full text-xs sm:text-xl shadow-xl cursor-pointer max-w-108 hover:scale-105 active:scale-95 ">
+            <button className="bg-white hover:bg-gray-200 transition-all duration-300 text-black font-black py-4 px-8 sm:px-12 rounded-full sm:text-xl shadow-xl cursor-pointer max-w-90 sm:w-108 hover:scale-105 active:scale-95 ">
               JOIN THOUSANDS READING IT FOR FREE!!!
             </button>
           </div>
@@ -107,7 +107,7 @@ export const ReadingTopics: React.FC = () => {
           </div>
 
           <div className="mt-10 text-center">
-            <button className="bg-white hover:bg-gray-200 transition-all duration-300 text-black font-black py-4 px-12 rounded-full text-xs sm:text-xl shadow-xl cursor-pointer max-w-108 hover:scale-105 active:scale-95 ">
+            <button className="bg-white hover:bg-gray-200 transition-all duration-300 text-black font-black py-4 px-8 sm:px-12 rounded-full sm:text-xl shadow-xl cursor-pointer max-w-90 sm:w-108 hover:scale-105 active:scale-95 ">
               JOIN THOUSANDS READING IT FOR FREE!!!
             </button>
           </div>

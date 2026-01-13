@@ -2,7 +2,7 @@ import React from "react";
 
 export const NewsletterSection: React.FC = () => {
   return (
-    <section className="bg-[#d40000] min-h-screen flex flex-wrap px-4 sm:px-10 py-16 text-white overflow-hidden relative">
+    <section className="bg-[#d40000] min-h-screen flex flex-wrap px-4 sm:px-10 sm:py-16 pt-16 pb-30 text-white overflow-hidden relative">
       <div className="flex justify-center lg:justify-start lg:w-fit w-full">
         <div className="relative max-w-120 -top-1 ">
           {/* Person Illustration Placeholder */}
@@ -31,11 +31,11 @@ export const NewsletterSection: React.FC = () => {
       </div>
 
       {/* Floating Icons decoration */}
-      <div className="absolute bottom-0 lg:-bottom-8 right-0 hidden md:block animate-bounce [animation-duration:2s]">
+      <div className="absolute -bottom-3 sm:bottom-0 lg:-bottom-8 right-0 animate-bounce [animation-duration:2s]">
         <img
           src={`${import.meta.env.BASE_URL}images/BulbWithMessage.png`}
           alt="BulbWithMessage"
-          className="md:max-w-40 lg:max-w-60"
+          className="w-24 sm:w-40 lg:w-60"
         />
       </div>
     </section>
